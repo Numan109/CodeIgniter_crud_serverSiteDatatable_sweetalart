@@ -161,6 +161,46 @@
     </script>
 
 
+	
+<!-- 	<script type="text/javascript">
+    var table;
+    $(document).ready(function() {
+        //datatables
+        table = $('#table').DataTable({
+            "processing": true, //Feature control the processing indicator.
+            "serverSide": true, //Feature control DataTables' server-side processing mode.
+            "order": [], //Initial no order.
+            dom: 'lBfrtip',
+            buttons: [
+                'csv', 'excel',
+                 {
+                    extend: 'pdfHtml5',
+                    title: 'Children List',
+                    orientation: 'landscape',
+                    pageSize: 'LEGAL'
+                }, 
+                'print', 'colvis'
+            ],
+            "lengthMenu": [
+                [25, 50, 100, 500, -1],
+                [25, 50, 100, 500, "All"]
+            ],
+
+            // Load data for the table's content from an Ajax source
+            "ajax": {
+                "url": "<?php echo site_url('StudentController/finl_stuedent_approved_list') ?>",
+                "type": "POST"
+            },
+
+            //Set column definition initialisation properties.
+            "columnDefs": [{
+                "targets": [0], //first column / numbering column
+                "orderable": false, //set not orderable
+            }, ],
+        });
+    });
+</script> -->
+
 
 
 
